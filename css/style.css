@@ -1,0 +1,37 @@
+.font{
+    background-image: url(../img/98333.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.container{
+    border: 2px solid white;
+    backdrop-filter: blur(15px);
+    border-radius: 25px ;
+    text-align: center;
+   
+  
+    font-size: 130%;
+    margin-top: 14.7%;
+}
+
+.titre{
+    text-align: center;
+    color: white;
+    font-size: 40px;
+}
+
+.bouton {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+}
+

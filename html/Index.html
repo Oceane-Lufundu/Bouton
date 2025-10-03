@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="font">
+    <div class="titre">
+        <h2>Envoyer une notification</h2>
+    </div>
+
+    <div class="container">
+        <button class="bouton" onclick="send()">📲 Envoyer</button>
+        <button class="bouton" onclick="send()">📲 Envoyer</button>
+        <button class="bouton" onclick="send()">📲 Envoyer</button>
+        <button class="bouton" onclick="send()">📲 Envoyer</button>
+        <button class="bouton" onclick="send()">📲 Envoyer</button>
+        <button class="bouton" onclick="send()">📲 Envoyer</button>
+        <button class="bouton" onclick="send()">📲 Envoyer</button>
+        <button class="bouton" onclick="send()">📲 Envoyer</button>
+        <button class="bouton" onclick="send()">📲 Envoyer</button>
+        <button class="bouton" onclick="send()">📲 Envoyer</button>
+        <button class="bouton" onclick="send()">📲 Envoyer</button>
+        <button class="bouton" onclick="send()">📲 Envoyer</button>
+    </div>
+        
+    <script>
+    function send() {
+    fetch('http://localhost:3000/send-notification', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+        token: 'TOKEN_DE_TA_SOEUR_ICI',
+        title: 'Hello',
+        body: 'Tu as reçu un message de Océane 💌'
+        })
+    })
+    .then(res => res.json())
+    .then(data => alert("Notification envoyée !"))
+    .catch(err => alert("Erreur : " + err));
+    }
+    </script>
+</body>
+</html>
