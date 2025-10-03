@@ -1,24 +1,21 @@
 .font{
-    background-image: url(../img/98333.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.container{
-    border: 2px solid white;
-    backdrop-filter: blur(15px);
-    border-radius: 25px ;
-    text-align: center;
-   
-  
-    font-size: 130%;
-    margin-top: 14.7%;
+    background-image:url(../img/test-2.jpg);
+    background-size: cover; /* Pour s'assurer que l'image couvre toute la page */
+    background-position: center; /* Pour centrer l'image */
+    height: 100vh; /* Pour que l'image prenne toute la hauteur de la fenêtre */
 }
 
 .titre{
     text-align: center;
-    color: white;
+    color: black;
     font-size: 40px;
+}
+
+.container{
+    backdrop-filter: blur(15px);
+    border: 2px solid whitesmoke;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
 .bouton {
